@@ -1,51 +1,51 @@
 [shell]
-program = "/bin/zsh"
+program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
 dimensions = { columns = 120, lines = 30}
 
 [colors]
-primary.foreground = "#a7aab0"
-primary.background = "#37383d"
+primary.foreground = "#EEEEEE"
+primary.background = "#282828"
 
 [colors.search]
-matches.foreground = "#37383d"
+matches.foreground = "#4C4C4C"
 matches.background = "#7c5c20"
 
-focused_match.foreground = "#37383d"
+focused_match.foreground = "#4C4C4C"
 focused_match.background = "#dbb671"
 
 [colors.hints]
-start.foreground = "#37383d"
-start.background = "#51a8b3"
+start.foreground = "#282828"
+start.background = "#358CA7"
 
-end.foreground = "#37383d"
+end.foreground = "#282828"
 end.background = "#de5d68"
 
 [colors.footer_bar]
-foreground = "#37383d"
+foreground = "#4C4C4C"
 background = "#51a8b3"
 
 [colors.normal]
-black = "#101012"
-red = "#de5d68"
-green = "#8fb573"
-blue = "#57a5e5"
-yellow = "#dbb671"
-cyan = "#51a8b3"
-magenta = "#bb70d2"
-white = "#D4C9C9"
+black = "#282828"
+red = "#FF064D"
+green = "#C6D243"
+blue = "#A8DFF1"
+yellow = "#FFC020"
+cyan = "#358CA7"
+magenta = "#D8B980"
+white = "#EEEEEE"
 
 [colors.bright]
-black = "#101012"
-red = "#de5d68"
-green = "#8fb573"
-blue = "#57a5e5"
-yellow = "#dbb671"
-cyan = "#51a8b3"
-magenta = "#bb70d2"
-white = "#D4C9C9"
+black = "#4C4C4C"
+red = "#FA104B"
+green = "#B8C33E"
+blue = "#A4DAEB"
+yellow = "#FFC020"
+cyan = "#45B6D9"
+magenta = "#D8B980"
+white = "#EEEEEE"
 
 [cursor.style]
 blinking = "On"
