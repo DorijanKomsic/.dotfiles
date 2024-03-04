@@ -18,14 +18,18 @@ return require('packer').startup(function(use)
   use 'navarasu/onedark.nvim'
   use 'nvim-tree/nvim-web-devicons'
   use 'prichrd/netrw.nvim'
+  use 'bluz71/nvim-linefly'
   --
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   use('mbbill/undotree')
 
+  -- Git --
   use('tpope/vim-fugitive')
-
+  use('airblade/vim-gitgutter')
+  use ('f-person/git-blame.nvim')
+  --
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
@@ -61,6 +65,4 @@ return require('packer').startup(function(use)
       branch = "harpoon2",
       requires = { {"nvim-lua/plenary.nvim"} }
   }
-  -- Packer
-  use "sindrets/diffview.nvim"
 end)
