@@ -206,6 +206,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dorijank/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/home/dorijank/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 
