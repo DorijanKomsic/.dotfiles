@@ -1,9 +1,18 @@
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
-dimensions = { columns = 120, lines = 30}
+dimensions = { columns = 120, lines = 35}
+
+[font]
+normal.family = "CommitMonoNerdFont"
+italic.family = "CommitMonoNerdFont"
+bold.family = "CommitMonoNerdFont"
+bold_italic.family = "CommitMonoNerdFont"
+normal.style = "Regular"
+bold.style = "Bold"
+bold_italic.style = "BoldItalic"
 
 [colors]
 primary.foreground = "#EEEEEE"
@@ -49,3 +58,5 @@ white = "#EEEEEE"
 
 [cursor.style]
 blinking = "On"
+
+[terminal]
