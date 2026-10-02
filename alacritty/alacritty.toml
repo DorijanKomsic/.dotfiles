@@ -16,46 +16,46 @@ bold.style = "Bold"
 bold_italic.style = "BoldItalic"
 
 [colors]
-primary.foreground = "#EEEEEE"
-primary.background = "#282828"
+primary.foreground = "#EAE7E5"
+primary.background = "#0D0D0D"
 
 [colors.search]
-matches.foreground = "#4C4C4C"
-matches.background = "#7c5c20"
+matches.foreground = "#0D0D0D"
+matches.background = "#D6A83A"
 
-focused_match.foreground = "#4C4C4C"
-focused_match.background = "#dbb671"
+focused_match.foreground = "#FFFFFF"
+focused_match.background = "#D12B18"
 
 [colors.hints]
-start.foreground = "#282828"
-start.background = "#358CA7"
+start.foreground = "#0D0D0D"
+start.background = "#35A6B5"
 
-end.foreground = "#282828"
-end.background = "#de5d68"
+end.foreground = "#FFFFFF"
+end.background = "#D12B18"
 
 [colors.footer_bar]
-foreground = "#4C4C4C"
-background = "#51a8b3"
+foreground = "#EAE7E5"
+background = "#222222"
 
 [colors.normal]
-black = "#282828"
-red = "#FF064D"
-green = "#C6D243"
-blue = "#A8DFF1"
-yellow = "#FFC020"
-cyan = "#358CA7"
-magenta = "#D8B980"
-white = "#EEEEEE"
+black   = "#161616"
+red     = "#D12B18"
+green   = "#789B4A"
+yellow  = "#D6A83A"
+blue    = "#4D83B3"
+magenta = "#A65B82"
+cyan    = "#187F8F"
+white   = "#EAE7E5"
 
 [colors.bright]
-black = "#4C4C4C"
-red = "#FA104B"
-green = "#B8C33E"
-blue = "#A4DAEB"
-yellow = "#FFC020"
-cyan = "#45B6D9"
-magenta = "#D8B980"
-white = "#EEEEEE"
+black   = "#363636"
+red     = "#E95745"
+green   = "#9ABF69"
+yellow  = "#E9C15B"
+blue    = "#70A4D2"
+magenta = "#C77AA0"
+cyan    = "#35A6B5"
+white   = "#FFFFFF"
 
 [cursor.style]
 blinking = "On"

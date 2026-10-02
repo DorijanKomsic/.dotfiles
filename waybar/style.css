@@ -1,0 +1,162 @@
+/*Reds*/
+@define-color rebel-red                #D12B18;
+@define-color rebel-red-light          #E95745;
+@define-color rebel-red-dark           #8F2016;
+
+@define-color republic-blue            #187F8F;
+@define-color republic-blue-light      #187F8F;
+
+/*Blacks*/
+@define-color darth-1                  #161616;
+@define-color darth-2                  #222222;
+
+/*Grays*/
+@define-color jedi-gray-1              #969696;
+@define-color jedi-gray-2              #222222;
+
+/*Whites*/
+@define-color x-wing-white-1           #EAE7E5;
+@define-color x-wing-white-2           #FFFFFF;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: CommitMonoNerdFont;
+    font-size: 15.5px;
+}
+
+window#waybar {
+    border-radius: 8px;
+    background-color: @darth-1;
+    border-bottom: 3px solid @rebel-red;
+}
+
+
+#workspaces button {
+    min-width: 24px;
+    min-height: 24px;
+
+    padding: 3px 5px 0px 3px;
+    margin: 0px 3px 3px;
+
+    background: transparent;
+    border-radius: 4px;
+    color: @x-wing-white-2;
+}
+
+#workspaces button.active {
+    background: @rebel-red;
+    color: white;
+}
+
+@keyframes blink-urgent {
+    0% {
+        background-color: @x-wing-white-1;
+        color: @rebel-red-light;
+    }
+
+    50% {
+        background-color: @x-wing-white-1 ;
+        color: @darth-1;
+    }
+
+    100% {
+        background-color: @x-wing-white-1;
+        color: @rebel-red-light;
+    }
+}
+
+#workspaces button.urgent {
+    background-color: @x-wing-white-2;
+    color: @rebel-red;
+
+    animation-name: blink-urgent;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+}
+
+
+#bluetooth,
+#network,
+#pulseaudio,
+#backlight,
+#volume {
+    border-radius: 4px;
+    padding: 3px 10px;
+    margin: 3px 7px 3px 0px;
+}
+
+#idle_inhibitor {
+    min-width: 26px;
+    border-radius: 4px;
+
+    padding: 3px 0px;
+    margin: 3px 7px 3px 0px;
+}
+#pulseaudio-slider {
+    padding: 0px;
+    margin: 0 0 0 8px;
+}
+
+#battery,
+#power-profiles-daemon {
+    padding: 3px 0px 3px 0px;
+    border-right: 3px solid @darth-1;
+}
+
+#power {
+    background: @rebel-red;
+
+    border-radius: 4px;
+    padding: 0;
+    margin: 3px 7px 3px 0;
+}
+
+#battery,
+#custom-power,
+#power-profiles-daemon {
+    padding: 3px 8px;
+    margin: 0;
+}
+
+#custom-power,
+#power-profiles-daemon {
+    min-width: 20px;
+}
+
+#pulseaudio-slider slider {
+    all: unset;
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 75px;
+    border-radius: 5px;
+    background: @republic-blue-light;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: @jedi-gray-1;
+}
+
+tooltip {
+    background: @darth-1;
+    border-radius: 5px;
+}
+
+tooltip label {
+    color: @x-wing-white-1;
+}
+
+#idle_inhibitor.activated {
+    background-color: @jedi-gray-1;
+    color: @darth-2;
+}
