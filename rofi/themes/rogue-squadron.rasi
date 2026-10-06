@@ -1,0 +1,110 @@
+configuration {
+    display-drun: " Applications:";
+    diplay-window: "Windows:";
+    drun-display-format: "{icon} {name}";
+    font: "CommitMonoNerdFont Medium 11";
+    modi: "window,run,drun";
+    show-icons: true;
+    icon-theme: "Kora";
+}
+
+@import "default.rasi"
+
+/* ---- Window ---- */
+window {
+    location:                   center;
+    anchor:                     center;
+    border:                     1px;
+    border-radius:              30px;
+
+    width:                      35%;
+    height:                     35%;
+}
+
+/* Main Box ---------------------------------------- */
+mainbox {
+    orientation:                horizontal;
+    children:                   [ "img", "listbox"];
+    background-color:           transparent;
+
+}
+
+/* Listbox ------------------------------------------ */
+listbox {
+    spacing:                     20px;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "message", "listview" ];
+    background-color:            @background;
+}
+
+/* Listview ---------------------------------------- */
+listview {
+    columns:                     2;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   true;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    background-color:            transparent;
+}
+
+/* Image ----------------------------------------------- */
+img {
+    padding:                    64px 128px;
+    background-image:           url("~/.dotfiles/rofi/assets/x-wing-ralph-mcquarrie.jpeg", height);
+}
+
+/* Inputbar ---------------------------------------------- */
+inputbar {
+    children:                    [ "textbox-icon", "entry" ];
+
+    border-radius:               12px;
+    background-color:            @shade-bg;
+    text-color:                  @text;
+
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     14px;
+    background-color:            @background-alt;
+}
+
+textbox-icon {
+    expand:                      false;
+    background-color:            @background-alt;
+    text-color:                  inherit;
+    str: "  ";
+}
+
+/* Entry ----------------------------------------------- */
+entry {
+    cursor:                     text;
+    expand:                     false;
+    placeholder-color:          inherit;
+    background-color:           @background-alt;
+    placeholder:                "Start";
+
+    text-color:                 inherit;
+}
+
+/* ---- Elements ---- */
+element {
+    cursor:                     pointer;
+    background-color:           transparent;
+    border-radius:              10px;
+    padding:                    12px;
+}
+
+element-text {
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+element-icon {
+    background-color: transparent;
+}

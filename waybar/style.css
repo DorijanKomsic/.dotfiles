@@ -4,7 +4,7 @@
 @define-color rebel-red-dark           #8F2016;
 
 @define-color republic-blue            #187F8F;
-@define-color republic-blue-light      #187F8F;
+@define-color republic-blue-light      #35A6B5;
 
 /*Blacks*/
 @define-color darth-1                  #161616;
@@ -138,13 +138,13 @@ window#waybar {
     min-height: 8px;
     min-width: 75px;
     border-radius: 5px;
-    background: @republic-blue-light;
+    background: @jedi-gray-1;
 }
 
 #pulseaudio-slider highlight {
     min-width: 10px;
     border-radius: 5px;
-    background: @jedi-gray-1;
+    background: @republic-blue-light;
 }
 
 tooltip {

@@ -1,0 +1,86 @@
+@import "~/.dotfiles/rofi/colors/rogue-squadron.rasi"
+
+* {
+    background-alt-1:            @background-alt; // Buttons background
+    background-1:                @background;
+    selected-1:                  @selected; // Button selected
+    active-1:                    @active; // Window activated
+    urgent-1:                    @urgent; // When hovering the activated window (maybe more?)
+
+    text-selected:               @background;
+    text:                        @foreground;
+
+    shade-shadow:                white / 6%;
+    shade-bg:                    white / 12%;
+    shade-border:                white / 24%;
+}
+
+window {
+    fullscreen:                  false;
+    cursor:                      "default";
+    background-color:            black / 12%;
+    border:                      0px;
+    border-color:                @urgent-1;
+}
+
+/* Elements ----------------------------------------------------- */
+element normal.normal,
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @text;
+}
+
+element selected.normal {
+    background-color:            @active-1;
+    text-color:                  @background-alt-1;
+    border:                      1px solid;
+    border-color:                @active-1;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+/* Listview ---------------------------------------------------- */
+
+listview {
+  border:                        0px;
+}
+
+/* Scrollbar ---------------------------------------------------- */
+scrollbar {
+    margin:                      0px 4px;
+    handle-width:                8px;
+    handle-color:                @background-alt-1;
+    background-color:            @background-1;
+    border-radius:               4px;
+}
+
+/* Message ------------------------------------------------------ */
+message {
+    background-color:            @shade-bg;
+    border:                      1px solid;
+    border-color:                transparent;
+    border-radius:               12px;
+    padding:                     24px;
+}
+
+error-message {
+    padding:                     100px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            black / 10%;
+    text-color:                  @text;
+}
+textbox {
+    background-color:            transparent;
+    text-color:                  black;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    highlight:                   none;
+}
