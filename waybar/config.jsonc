@@ -24,7 +24,7 @@
         "group/power"
     ],
      "hyprland/workspaces": {
-         "disable-scroll": true,
+         "disable-scroll": false,
          "all-outputs": true,
          "warp-on-scroll": false,
          "format": "{icon}",
@@ -33,8 +33,10 @@
              "active": "",
              "default": ""
          },
-     "persistent-workspaces": {
-            "*": 5 // 5 workspaces by default on every monitor
+         "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})' ",
+         "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e-1\"})' ",
+         "persistent-workspaces": {
+                "*": 5 // 5 workspaces by default on every monitor
          }
      },
     "idle_inhibitor": {
